@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 public class CashbackHackServiceTest {
 
-     private CashbackHackService service = new CashbackHackService();
+    private CashbackHackService service = new CashbackHackService();
 
     @Test
     public void shouldReturnCorrectAmountWhenBelowBoundary() {
-      int actual = service.remain(999);
-      int expected = 1;
+        int actual = service.remain(999);
+        int expected = 1;
 
         Assertions.assertEquals(expected, actual);
     }
@@ -30,6 +30,4 @@ public class CashbackHackServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
-
 }
